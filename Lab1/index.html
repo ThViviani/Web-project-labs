@@ -1,19 +1,125 @@
 <!DOCTYPE html>
 
-<html>
-
+<body>
     <head>
+        <title>Live notes</title>
         <meta charset="utf-8">
-        <title>Hello Safari!</title>
+        <style>
+            .comments {
+                border: 1px solid black
+            }
+        </style>
     </head>
-
-    <body>
-        <div style = "color:red">Something text</div>
-        <input type= "button" value = "Click!" disabled>
-        <div>Something text</div>
-    </body>
-
-    <!text fdfdf>
-    <!text fdfdf>
     
-</html>
+    <header>
+        <h1 id="head">Live notes</h1>
+        <p>Keep your live notes here...</p>
+        <nav>
+            <a href="/">Главная</a> |
+            <a href="/top">Топ</a> |
+            <a href="/last">Последнее</a> |
+            <a href="/contacts">Контакты</a> |
+            <a href="#footer">Вниз!</a>
+        </nav>
+        <br><br><br>
+    </header>
+
+    <main>
+        <article>
+            <h2>Заголовок статьи</h2>
+            <time datetime="2022-03-06">Дата публикации: 6 марта 2022</time>
+            
+            <nav>
+                <p><b>Autor: Anon</b></p>
+                <ul>
+                    <li><a href="#part1">Часть1</a></li>
+                    <li><a href="#part2">Часть2</a></li>
+                    <li><a href="#part3">Часть3</a></li>
+                    <li><a href="#comments">Комменатарии</a></li>
+                </ul>
+            </nav>
+
+            <section id="part1">
+                <h3>Часть1. Тема 1</h3>
+                <figure>
+                    <figcaption><b>Подпись картинки</b></figcaption>
+                    <img src="picture.png" alt="HTML5" style="float: left;margin: 10px;">
+                </figure>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+            </section>
+
+            <section id="part2">
+                <h3>Часть2. Тема 2</h3>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+            </section>
+
+            <section id="part3">
+                <h3>Часть3. Тема 3</h3>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+                <p>Какой-то текст. Какой-то текст. Какой-то текст. Какой-то текст. </p>
+            </section>
+
+            <section id="comments">
+                <br><br>
+                <h3>Комментарии:</h3>
+                <article id="c1" class="comments">
+                    <p><b>Anon1</b> <time datetime="2022-03-06T9:20">9:20 06.03.2022</time></p>
+                    <p>Статья скучная, что за какой-то текст!!!!!!!!!!!!!!!</p>
+                </article>
+                <article id="c2" class="comments">
+                    <p><b>Anon2</b> <time datetime="2022-03-06T9:21">9:21 06.03.2022</time></p>
+                    <p>Статья Норм</p>
+                </article>
+                <article id="c3" class="comments">
+                    <p><b>Anon3</b> <time datetime="2022-03-06T9:22">9:22 06.03.2022</time></p>
+                    <p>...</p>
+                </article>
+            </section>
+
+            <form>
+                <fieldset>
+                    <label for="login"><b>login:</b></label>
+                    <input type="text" placeholder="type your login..." name="login" required><br>
+                    <label for="email"><b>email:</b></label>
+                    <input type="text" placeholder="type your email..." name="email"><br>
+                    <label for="??????"><b>Поле ввода сайта????????</b></label>
+                    <input type="text" placeholder="type site?????????????" name="??????"><br>
+                    <label for="comment"><b>Ваш комментарий:</b></label><br>
+                    <textarea id="comment" name="comment" rows="10" cols="100" required></textarea><br>
+                    <button>Add</button>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <br><br><br>
+            <p>
+                <a href="/license">Лицензионное соглашение</a><br/>
+                Copyright © 2022. Live note<br>
+                <a href="#head">Вверх!</a>
+            </p>
+        </div>
+    </footer>
+</body>
