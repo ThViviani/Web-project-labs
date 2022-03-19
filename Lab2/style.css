@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Lexend Peta Regular";
+    src: local("Lexend Peta Regular"),
+      local("LexendPeta-Regular"),
+      url("Lexend Peta-webfont.woff2") format("woff2"),
+      url("Lexend Peta-webfont.woff") format("woff"),
+      url("Lexend Peta-webfont.svg") format("svg");
+  }
+
+header {
+    background-color:cadetblue;
+    font-family: "Lexend Peta Regular", sans-serif;
+    margin-bottom: 25px;
+}
+
+main {
+    font-size: 18px;
+}
+
+.content-header {
+    font-family: "Lexend Peta Regular", sans-serif;
+}
+
+.content-header h2 {
+    margin-top: 0px;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.quote {
+    background-color: antiquewhite;
+}
+
+.quote-text-letter {
+    float: left;
+    margin-right: 7px;
+    color: coral;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 52px;
+    line-height: 52px;
+}
+
+.quote-author {
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-top: 1px solid coral;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.comments {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color:#c8c8ff;
+    background-image: linear-gradient(to top, #c8c8ff, white 50%);
+    background-image: -o-linear-gradient(to top, #c8c8ff, white 50%);
+    background-image: -moz-linear-gradient(to top, #c8c8ff, white 50%);
+    background-image: -webkit-linear-gradient(to top, #c8c8ff, white 50%);
+    box-shadow: 10px 4px 4px #888;
+    -webkit-transition: all 0.5s ease; 
+    transition: all 0.5s ease;
+    word-wrap: break-word;
+}
+
+.comments:nth-of-type(even) {
+    background-image: linear-gradient(to top, #6363d1, #c8c8ff 50%);
+    background-image: -o-linear-gradient(to top, #6363d1, #c8c8ff 50%);
+    background-image: -moz-linear-gradient(to top, #6363d1, #c8c8ff 50%);
+    background-image: -webkit-linear-gradient(to top, #6363d1, #c8c8ff 50%);
+}
+
+.comments:hover {
+    -webkit-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+    transform: translate(-2px, -2px);
+    -webkit-box-shadow: 12px 6px #888;
+    box-shadow: 12px 6px 4px #888;
+}
+
+.autor {
+    font-size: 15px;
+    margin-top: 1px;
+}
+
+fieldset {
+    border: 0px;
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+#add-comment textarea {
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
