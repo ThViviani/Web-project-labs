@@ -1,7 +1,7 @@
 function createRandomArray() {
-    var arr = []
+    let arr = []
     let length = 15
-    for (var i = 0, t = 10; i < length; i++) {
+    for (let i = 0, t = 10; i < length; i++) {
         arr.push(
             Math.round(Math.random() * t)
         )
@@ -10,7 +10,7 @@ function createRandomArray() {
 }
 
 function countSort(arr) {
-    var counter = []
+    let counter = []
     for (let i = 0; i <= 10; i++) {
         counter[i] = 0
     }
@@ -19,9 +19,9 @@ function countSort(arr) {
         counter[number] += 1
     }
 
-    var res = []
-    for (var i = 0; i < counter.length; i++) {
-        for (var j = 0; j < counter[i]; j++) {
+    let res = []
+    for (let i = 0; i < counter.length; i++) {
+        for (let j = 0; j < counter[i]; j++) {
             res.push(i)
         }
     }
@@ -29,7 +29,7 @@ function countSort(arr) {
 }
 
 let fieldForRandomArray = document.getElementById("randomArray")
-var arr = createRandomArray()
+let arr = createRandomArray()
 fieldForRandomArray.value = arr
 
 let fieldForSortedArray = document.getElementById("sortedArray")
@@ -38,7 +38,7 @@ fieldForSortedArray.hidden = true
 
 let button = document.getElementById("sortButton")
 button.onclick = function() {
-    var arrAfterSort = countSort(arr)
+    let arrAfterSort = countSort(arr)
     fieldForSortedArray.value = arrAfterSort
     fieldForSortedArray.hidden = false
     button.style.background = "green"
